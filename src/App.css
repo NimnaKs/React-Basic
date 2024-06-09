@@ -1,28 +1,4 @@
-
-.navigation {
-  font-family: 'Roboto', sans-serif;
-  width: 100%;
-  background-color: #f5f6fa;
-  padding: 20px 0;
-  text-align: center;
+li a.active{
+    color: #191970;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  display: inline-block;
-  margin-right: 25px;
-}
-
-li a {
-  text-decoration: none;
-  color: #333;
-}
-
-li a:hover {
-  color: #007bff;
-}

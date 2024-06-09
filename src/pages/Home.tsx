@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+/*import { Link } from "react-router-dom";*/
 
 const Home = () => {
     return (
         <div>
             <div className="navigation">
-                <ul>
+                {/*<ul>
                     <li>
                         <Link to="/">Home</Link>
                     </li>
@@ -14,7 +14,7 @@ const Home = () => {
                     <li>
                         <Link to="/profile">Profile</Link>
                     </li>
-                </ul>
+                </ul>*/}
             </div>
         </div>
     )
