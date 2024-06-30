@@ -1,4 +1,4 @@
-import { createContext, useState, ReactNode, FC } from "react";
+import {createContext, useState, ReactNode, FC, useContext} from "react";
 
 interface AuthContextType {
     isAuthenticated: boolean;
@@ -39,4 +39,6 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
     );
 };
 
-export default AuthContext;
+export const useAuth = (): AuthContextType => {
+    return useContext(AuthContext);
+}

@@ -1,10 +1,15 @@
 import { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { useAuth} from "../utils/AuthContext";
+import {useNavigate} from "react-router-dom";
 
 const Login = () => {
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
+
+    const navigate = useNavigate();
+    const { login } = useAuth();
 
     const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -14,7 +19,9 @@ const Login = () => {
                 password: password,
             });
             if (response.status === 200) {
+                login(response.data.token);
                 toast.success("Authentication successful. :)");
+                navigate("/");
             }
         } catch (error) {
             console.log(error);
