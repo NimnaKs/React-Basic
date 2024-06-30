@@ -9,7 +9,7 @@ const Header = () => {
                 <nav className="navigation flex justify-center items-center py-4">
                     <ul className="flex space-x-8">
                         <li className="flex items-center hover:text-gray-300">
-                            <NavLink to="/"> <FontAwesomeIcon icon={faHome} className="mr-2"/> Home </NavLink>
+                            <NavLink to="/"> <FontAwesomeIcon icon={faHome} className="mr-2"/> Login </NavLink>
                         </li>
                         <li className="flex items-center hover:text-gray-300">
                             <FontAwesomeIcon icon={faExchangeAlt} className="mr-2"/>
